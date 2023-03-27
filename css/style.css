@@ -70,3 +70,7 @@
     height: 50%; 
     text-align: center;
 }
+.footer{
+    bottom:0;
+    position:fixed;
+}
