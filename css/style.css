@@ -1,0 +1,72 @@
+/*-----------PAGINA--------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------------TIPOGRAFIAS Y ESTILOS------------------*/
+
+/*----------------COLORES----------------*/
+.azul{
+    background-color: rgb(64, 64, 201);
+}
+
+/*--------------TAMAÑOS-------------*/
+.mrg10px{
+    margin:10px;
+}
+.mrg_w2vw{
+    margin:0 2vw;
+}
+.mrg_h8vh{
+    margin:0 8vh;
+}
+.pd10px{
+    padding:10px;
+}
+/*-----------SECCIONES-----------*/
+.flx{
+    display: flex;
+}
+.flx_wrap_w{
+    flex-wrap: wrap;
+}
+.flx_column{
+    flex-direction: column;
+}
+.align_it_cent{
+    align-items: center;
+}
+.jst_con_cent{
+    justify-content: center;
+}
+.jst_con_around{
+    justify-content: space-around;
+}
+.jst_con_between{
+    justify-content: space-between;
+}
+/*------------ELEMENTOS--------------*/
+.icono{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.card{
+    margin:4vh;
+    width:250px;
+    height: 300px;
+    padding:15px;
+    border-radius: 10px;
+}
+.portada{
+    min-width: 100%;
+    max-height: 50%;
+    border-radius: 10px;
+}
+.info{
+    width: 100%;
+    height: 50%; 
+    text-align: center;
+}
