@@ -1,0 +1,144 @@
+/*-----------PAGINA--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Ubuntu:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease;
+}
+
+/*----------TIPOGRAFIAS Y ESTILOS------------*/
+.Ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+.Roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.fw700{
+    font-weight: 700;
+}
+.fw500{
+    font-weight: 500;
+}
+.fw300{
+    font-weight: 300;
+}
+.parrafo p{
+    font-size: 10pt;
+}
+
+/*--------------COLORES---------------*/
+.fondo{
+    background-color: #060614 !important;
+}
+.azulos{
+    background-color: rgb(27,26,57);
+}
+.violeta{
+    background-color: #ac6bd6;
+    /* transform: scale(0.5); */
+}
+.rojo{
+    background-color: red;
+}
+.verde{
+    background-color: rgb(0, 255, 128);
+}
+.naranja{
+    background-color: orange;
+}
+.blanco_t{
+    color:white;
+}
+.gris_t{
+    color:grey;
+}
+.purpura_t{
+    color:purple;
+}
+
+/*--------------CONTENEDORES----------------*/
+#contenedor{
+    width:100%;
+    height: auto;
+    padding:10%;
+    min-height: 100vh;
+}
+#imagen{
+    background-image: url(../img/imagenvioleta.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+}
+
+/*------------MEDIDAS------------*/
+/*anchos*/
+.w50{
+    width: 50%;
+}
+/*alturas*/
+.h400{
+    height: 400px;
+}
+/*-------------ORGANIZACIÓN--------------*/
+/* .fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearb{
+    clear:both;
+} */
+.pd5{
+    padding:5%;
+}
+.mg2{
+    margin:2%;
+}
+.dflex{
+    display:flex;
+}
+.columna{
+    flex-direction: column;
+}
+.justcen{
+    justify-content: center;
+}
+.justspace{
+    justify-content: space-between;
+}
+.justaround{
+    justify-content: space-around;
+}
+
+/*----------MEDIA QUERIES-------------*/
+/*PARA RESPONSIVE*/
+/* seleccion para BREAKPOINT */
+
+/* @media screen and (max-width:514px){
+    
+    .violeta{
+        background-color: cyan;
+        transform: scale(1);
+    }
+
+} */
+@media screen and (max-width:514px){
+    .aligncen{
+        align-items:center;
+    }
+    .flexdir{
+        flex-direction: column-reverse;
+    }
+    .w50{
+        width: 100%;
+    }
+    .colm{
+        flex-direction: column;
+    }
+    #imagen{
+        height: 200px;
+    }
+}
