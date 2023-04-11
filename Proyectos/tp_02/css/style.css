@@ -167,7 +167,7 @@ nav ul li{
 
 .lista .resto{
     border-radius: 14px;
-    flex: 1 0 180px; /*achura / altura / tamaño*/   
+    flex: 1 0 180px; /*crecimiento / decrecimiento / tamaño base*/   
     background-color:white;
     display: flex;
     align-items: center;
