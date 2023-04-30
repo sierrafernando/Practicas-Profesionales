@@ -44,19 +44,54 @@ body{
 .Ubuntu{
     font-family: 'Ubuntu', sans-serif;
 }
+
 .Roboto{
     font-family: 'Roboto', sans-serif;
 }
+
 .Poppins{
     font-family: 'Poppins', sans-serif;
 }
-.fs30{
-    font-size: 30pt!important;
+
+.fs25{
+    font-size: 25pt!important;
+}
+
+.txtcen{
+    text-align: center;
+}
+
+.ftwt500{
+    font-weight: 500;
+}
+
+.ftwt300{
+    font-weight: 300;
+}
+
+.sm{
+    font-size: 14pt !important;
+}
+
+.med{
+    font-size: 18PT;
 }
 
 /*--------------COLORES-----------------*/
 .blanco{
     background-color: white;
+}
+.grisf{
+    color: gray;
+}
+.amarillof{
+    color:rgb(226, 226, 7);
+}
+.naranjaf{
+    color:rgb(235, 155, 8);
+}
+.rojof{
+    color:rgb(240, 82, 82);
 }
 /*-----------------TAMAÑOS-------------------*/
 .z0{
@@ -108,19 +143,17 @@ body{
 }
 
 nav ul{
-    height: 100px;
-    font-size: 20pt;
     display: flex;
     gap: 10px;
+}
+
+.nav_index ul{
+    justify-content: space-between;
     overflow-x: scroll;
 }
 
-.nav-resto ul{
+.nav_resto ul{
     justify-content: space-around;
-}
-
-.nav-index ul{
-    justify-content: space-between;
 }
 
 nav ul li{
@@ -128,13 +161,13 @@ nav ul li{
     text-align: center;
 }
 
-.nav-resto ul li{
-    flex:0 0 100px;
-}
-
-.nav-index ul li{
+.nav_index ul li{
     flex:0 0 200px;
     font-size: 24pt !important;
+}
+
+.nav_resto ul li{
+    flex:0 0 100px;
 }
 
 .busqueda input[type="search"]{
@@ -176,7 +209,7 @@ nav ul li{
     padding: 14px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     width: 80%;
     margin: auto;
 }
@@ -231,6 +264,7 @@ nav ul li{
 .datos{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .rangoprecio{
@@ -263,14 +297,6 @@ nav ul li{
 .rate__resto{
     right:5%;
     bottom:-25px;
-}
-/*----------TAMAÑO INCONOS----------*/
-.sm{
-    font-size: 14pt !important;
-}
-
-.med{
-    font-size: 18PT;
 }
 
 /*---------------COMPONENTES RESTO----------------*/
@@ -337,7 +363,6 @@ nav ul li{
 }
 
 .lista_menu {
-    background-color: rgb(208, 208, 255);
     width: 100%;
     padding: 10px;
     display: flex;
@@ -347,7 +372,6 @@ nav ul li{
 }
 
 .item_menu{
-    background-color: aqua;
     height: 150px;
     display: flex;
     width: 80%;
@@ -383,5 +407,4 @@ nav ul li{
 .item_detalle{
     line-height: 30px;
     width: calc(100% - 100px);
-    background-color: brown;
 }
