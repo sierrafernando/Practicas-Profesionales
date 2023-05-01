@@ -231,6 +231,10 @@ nav ul li{
 }
 
 .lista .resto {
+    height: 220px;
+    background-image: url(../img/restaurante.jpg);
+    background-position:center;
+    background-size: cover;
     border-radius: 14px;
     flex: 1 0 45%;
     display: flex;
@@ -240,8 +244,7 @@ nav ul li{
 }
 
 .resto .imagen{
-    height: 100%;
-    width: 40%;
+    width: 300px;
 }
 
 .imagen img{
@@ -252,9 +255,10 @@ nav ul li{
 }
 
 .resto .descrip{
-    border-radius:0 0 0 5px;
+    border-radius:0 0 14px 35px;
+    background-color: white;
     height: 100%;
-    width: 60%;
+    width: 100%;
     padding:20px;
     display: flex;
     flex-direction: column;

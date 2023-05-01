@@ -21,10 +21,6 @@
         margin: auto;
     }
     
-    .resto .imagen{
-        height: 145px;
-    }
-    
     .ofresto .lista{
         flex-direction: column;
         flex-wrap: nowrap;
