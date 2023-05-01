@@ -100,16 +100,26 @@ body{
 .z10{
     z-index: 5;
 }
+.pad_top60 {
+    padding-top: 60px;
+}
+
+.pad_bot60{
+    padding-bottom: 60px;
+}
 /*---------------COMPONENTES INDEX--------------*/
 .header{
     position:relative;
     height: 300px;
-    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/27/9f/45/bc/restaurant.jpg);
     background-position:center;
     background-size:cover;
     padding: 10%;
-    box-shadow: inset 0 0 150px 20px black;
     margin-bottom:40px;
+}
+
+.header_index{
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/27/9f/45/bc/restaurant.jpg);
+    box-shadow: inset 0 0 150px 20px black;
 }
 
 .header .welcome{
@@ -204,7 +214,6 @@ nav ul li{
     border-radius: 0 5px 5px 0;
 }
 
-/*--------------COMPONENTES INDEX RESTO---------------*/
 .ofresto {
     padding: 14px;
     display: flex;
@@ -243,6 +252,7 @@ nav ul li{
 }
 
 .resto .descrip{
+    border-radius:0 0 0 5px;
     height: 100%;
     width: 60%;
     padding:20px;
@@ -278,10 +288,10 @@ nav ul li{
 }
 
 .rate{
-    position:absolute;
     background-color: rgb(119, 243, 202);
+    min-width: 50px;
     height: 50px;
-    width: 50px;
+    padding: 0 5px;
     border-radius: 15px 0 15px 0;
     text-align: center;
     line-height: 50px;
@@ -292,14 +302,21 @@ nav ul li{
 .rate__card{
     right: -5px;
     top:-5px;
+    position:absolute;
 }
 
 .rate__resto{
     right:5%;
     bottom:-25px;
+    position:absolute;
 }
 
 /*---------------COMPONENTES RESTO----------------*/
+.header_resto{
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/27/9f/45/bc/restaurant.jpg);
+    box-shadow: inset 0 0 100px 10px black;
+}
+
 .nav_mobile{
     position:fixed;
     width: 100%;
@@ -354,14 +371,6 @@ nav ul li{
     text-align: center;
 }
 
-.pad_top60 {
-    padding-top: 60px;
-}
-
-.pad_bot60{
-    padding-bottom: 60px;
-}
-
 .lista_menu {
     width: 100%;
     padding: 10px;
@@ -407,4 +416,108 @@ nav ul li{
 .item_detalle{
     line-height: 30px;
     width: calc(100% - 100px);
+}
+
+.item_detalle a{
+    text-decoration: none;
+    color:black;
+}
+
+/*-------------------CART--------------------*/
+.detalle_imagen{
+    position:relative;
+    height: 300px;
+    background-position:center;
+    background-size:cover;
+    padding: 10%;
+    margin-bottom:40px;
+    background-image: url(https://img.freepik.com/fotos-premium/pasta-espagueti-salsa-tomate-perejil-plato-blanco-sobre-mesa-madera-negra_161594-12.jpg);
+}
+
+.detalle_precio{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    right:0;
+    bottom:-40px;
+    align-items: center;
+}
+
+.cart_wrapper{
+    padding:0 5%;
+    display: flex;
+    flex-direction: column;
+    gap:40%;
+}
+
+.cart_wrapper .cart_descrip{
+    margin: 20px 0;
+    width: 100%;
+}
+
+.cart_wrapper .nota{
+    border:none;
+    width: 100%;
+    padding:10px 0;
+}
+
+.cart_wrapper .nota:focus{
+    outline:none;
+}
+
+.add_cart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+.add_cart *{
+    background-color: aquamarine;
+    height: 60px;
+    border:none;
+    border-radius: 5px;
+}
+
+.add_cart input::-webkit-outer-spin-button,
+.add_cart input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  text-align: center;
+  margin: 0;
+}
+
+.add_cart input[type=number]{
+    -moz-appearance: textfield;
+    text-align: center;
+}
+
+.add_cart input:focus{
+    outline:none;
+}
+
+.add_cart button:hover{
+    background-color: rgb(42, 190, 141);
+}
+
+.add_cart button:active{
+    background-color: aquamarine;
+}
+
+.suma_resta{
+    width: 40%;
+}
+
+.add_cart .menos,
+.add_cart .mas {
+    width: 17.5%;
+}
+
+.add_cart .cantidad{
+    width: 60%;
+}
+
+.add{
+    height: 60px;
+    width: 57%;
 }
